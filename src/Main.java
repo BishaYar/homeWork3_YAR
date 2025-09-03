@@ -93,8 +93,8 @@ public class Main {
         short weightDay1 = 250;
         short weightDay2 = 500;
 
-        short countDays1 = (short) ( ( 7 * 1000 ) / weightDay1 );
-        short countDays2 = (short) ( ( 7 * 1000 ) / weightDay2 );
+        short countDays1 = (short) ( ( weightMinus * 1000 ) / weightDay1 );
+        short countDays2 = (short) ( ( weightMinus * 1000 ) / weightDay2 );
         short countDays3 = (short) ( ( countDays1 + countDays2 ) / 2 );
 
         System.out.println("Спортсмен похудеет за " + countDays1 + " дней, если будет терять 250 грамм в день" );
@@ -106,15 +106,15 @@ public class Main {
         int payCheckDen = 83690;
         int payCheckKris = 76230;
 
-        int increaseMasha, increaseDen, increaseKris;
+        double increaseMasha, increaseDen, increaseKris;
 
-        increaseMasha = (int) ( payCheckMasha * 1.1 );
-        increaseDen = (int) ( payCheckDen * 1.1 );
-        increaseKris = (int) ( payCheckKris * 1.1 );
+        increaseMasha = (double) ( payCheckMasha * 1.1 );
+        increaseDen = (double) ( payCheckDen * 1.1 );
+        increaseKris = (double) ( payCheckKris * 1.1 );
 
-        int diffPayCheckMasha = ( increaseMasha - payCheckMasha ) * 12;
-        int diffPayCheckDen = ( increaseDen - payCheckDen ) * 12;
-        int diffPayCheckKris = ( increaseKris - payCheckKris ) * 12;
+        double diffPayCheckMasha = ( increaseMasha - payCheckMasha ) * 12;
+        double diffPayCheckDen = ( increaseDen - payCheckDen ) * 12;
+        double diffPayCheckKris = ( increaseKris - payCheckKris ) * 12;
 
         System.out.println("Маша теперь получает " + increaseMasha + " рублей. Годовой доход вырос на " + diffPayCheckMasha + " рублей" );
         System.out.println("Денис теперь получает " + increaseDen + " рублей. Годовой доход вырос на " + diffPayCheckDen + " рублей" );
