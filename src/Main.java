@@ -116,9 +116,9 @@ public class Main {
         double diffPayCheckDen = ( increaseDen - payCheckDen ) * 12;
         double diffPayCheckKris = ( increaseKris - payCheckKris ) * 12;
 
-        System.out.println("Маша теперь получает " + increaseMasha + " рублей. Годовой доход вырос на " + diffPayCheckMasha + " рублей" );
-        System.out.println("Денис теперь получает " + increaseDen + " рублей. Годовой доход вырос на " + diffPayCheckDen + " рублей" );
-        System.out.println("Кристина теперь получает " + increaseKris + " рублей. Годовой доход вырос на " + diffPayCheckKris + " рублей" );
+        System.out.println("Маша теперь получает " + String.format("%.2f", increaseMasha) + " рублей. Годовой доход вырос на " + String.format("%.2f", diffPayCheckMasha) + " рублей" );
+        System.out.println("Денис теперь получает " + String.format("%.2f", increaseDen) + " рублей. Годовой доход вырос на " + String.format("%.2f", diffPayCheckDen) + " рублей" );
+        System.out.println("Кристина теперь получает " + String.format("%.2f", increaseKris) + " рублей. Годовой доход вырос на " + String.format("%.2f", diffPayCheckDen) + " рублей" );
 
     }
  }
