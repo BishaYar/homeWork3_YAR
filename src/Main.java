@@ -118,7 +118,7 @@ public class Main {
 
         System.out.println("Маша теперь получает " + String.format("%.2f", increaseMasha) + " рублей. Годовой доход вырос на " + String.format("%.2f", diffPayCheckMasha) + " рублей" );
         System.out.println("Денис теперь получает " + String.format("%.2f", increaseDen) + " рублей. Годовой доход вырос на " + String.format("%.2f", diffPayCheckDen) + " рублей" );
-        System.out.println("Кристина теперь получает " + String.format("%.2f", increaseKris) + " рублей. Годовой доход вырос на " + String.format("%.2f", diffPayCheckDen) + " рублей" );
+        System.out.println("Кристина теперь получает " + String.format("%.2f", increaseKris) + " рублей. Годовой доход вырос на " + String.format("%.2f", diffPayCheckKris) + " рублей" );
 
     }
  }
